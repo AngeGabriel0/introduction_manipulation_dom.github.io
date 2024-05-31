@@ -10,7 +10,7 @@ function changeSlide(newSlideIndex) {
 }
 
 function nextSlide() {
-    let newSlideIndex = (currentSlide + 1) % slides.length; // 
+    let newSlideIndex = (currentSlide + 1) % slides.length; // Calculate the new slide index
     changeSlide(newSlideIndex); 
 }
 
