@@ -1,4 +1,4 @@
-// Sélection des éléments du DOM
+// Select DOM elements
 let player1ScoreDisplay = document.getElementById('player1Score');
 let player2ScoreDisplay = document.getElementById('player2Score');
 let player1Btn = document.getElementById('player1Btn');
@@ -29,7 +29,6 @@ function updateScoreDisplay() {
     player2ScoreDisplay.textContent = player2Score;
 }
 
-// Fonction pour réinitialiser le jeu
 function resetGame() {
     player1Score = 0;
     player2Score = 0;
@@ -40,7 +39,7 @@ function resetGame() {
     updateScoreDisplay();
 }
 
-// Ajout des écouteurs d'événements pour les boutons
+// Add event listeners for buttons
 player1Btn.addEventListener('click', function () {
     if (player1Score < maxScore && player2Score < maxScore) {
         player1Score++;
