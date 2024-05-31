@@ -4,54 +4,28 @@
     box-sizing: border-box;
 }
 
-/* Style pour le corps de la page */
 body {
-    /* Utilisation de flexbox pour le centrage */
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* Hauteur minimale pour s'assurer que le corps de la page occupe tout l'écran */
     min-height: 100vh;
-
-    /* Couleur de fond de la page */
     background-color: #f0f0f0;
-    
-    /* Police de caractères pour le texte de la page */
     font-family: Arial, sans-serif;
-    
-    /* Couleur du texte de la page */
     color: #333;
 }
 
-/* Style pour les liens de la page */
 a {
-    /* Affichage des liens en bloc */
     display: block;
-    
-    /* Espacement autour des liens */
     margin: 20px;
     padding: 10px;
-    
-    /* Largeur maximale pour les liens */
     max-width: 200px;
-    
-    /* Couleur de fond des liens */
     background-color: #007BFF;
-    
-    /* Couleur du texte des liens */
     color: white;
-    
-    /* Style du texte des liens */
     text-decoration: none;
     text-align: center;
-    
-    /* Arrondissement des coins des liens */
     border-radius: 5px;
 }
 
-/* Style pour les liens de la page lorsqu'ils sont survolés */
 a:hover {
-    /* Couleur de fond des liens lorsqu'ils sont survolés */
     background-color: #0056b3;
 }
