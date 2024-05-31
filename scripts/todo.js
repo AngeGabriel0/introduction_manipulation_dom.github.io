@@ -11,34 +11,32 @@ function addTask(event) {
         return;
     }
 
-    // Création d'un nouvel élément de liste pour la tâche
     let li = createTaskElement(taskText);
 
-    // Ajout de l'élément de liste à la liste de tâches
+    // Add an element on the task list
     taskList.appendChild(li);
 
-    // Réinitialisation de l'input
+    // Reset input
     taskInput.value = "";
 }
 
-// Fonction pour éditer une tâche
+
 function editTask(task) {
     let taskTextElement = task.firstChild;
     let taskText = taskTextElement.textContent;
 
-    // Demande à l'utilisateur de modifier la tâche
+    // Asking user for editing the task
     let newTaskText = prompt("Modifier la tâche : ", taskText);
     if (newTaskText === null || newTaskText === "") {
         return;
     }
 
-    // Mise à jour du texte de la tâche
+    // Task update
     taskTextElement.textContent = newTaskText;
 }
 
 // Fonction pour supprimer une tâche
 function deleteTask(task) {
-    // Suppression de l'élément de la liste de tâches
     taskList.removeChild(task);
 }
 
