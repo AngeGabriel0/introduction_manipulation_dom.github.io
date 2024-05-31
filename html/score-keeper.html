@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/score-keeper.css">
+    <title>Score Keeper</title>
+</head>
+<body>
+    <div class="scoreboard">
+        <h1>Score Keeper</h1>
+        <div id="scores">
+            <h2><span id="player1Score">0</span> - <span id="player2Score">0</span></h2>
+        </div>
+        <div id="maxScoreContainer">
+            <label for="maxScoreInput">Score maximal :</label>
+            <input type="number" id="maxScoreInput" min="1" max="30">
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="player1Btn">Player 1</button>
+        <button id="player2Btn">Player 2</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+
+    <script src="../scripts/score-keeper.js"></script>
+</body>
+</html>
